@@ -1,3 +1,4 @@
+import Benefit from "@/features/benefitSection/components/Benefit";
 import Hero from "@/features/HeroSection/components/Hero";
 import CreativeSkills from "@/features/SkilssSection/component/CreativeSkills";
 
@@ -13,6 +14,8 @@ export default function Home() {
       <section>
         <CreativeSkills />
       </section>
+      {/* Benefit Section */}
+      <Benefit />
       
     </div>
   );

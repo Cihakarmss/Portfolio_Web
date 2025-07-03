@@ -30,7 +30,7 @@ const Navigation: React.FC = () => {
             <Link
               key={item.label}
               href={item.href}
-              className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium"
+              className="text-grey-10 hover:text-purple-70 transition-colors duration-200 font-medium"
             >
               {item.label}
             </Link>
