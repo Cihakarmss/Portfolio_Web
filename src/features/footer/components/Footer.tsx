@@ -17,7 +17,7 @@ const Footer = () => {
             
             {/* Brand Section */}
             <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-bold text-purple-600 mb-2">
+              <h3 className="text-2xl font-bold text-purple-50 mb-2">
                 {footerData.brand.name}
               </h3>
               <p className="text-gray-600">
@@ -51,7 +51,7 @@ const Footer = () => {
 
                   key={social.name}
                   href={social.href}
-                  className={`w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 bg-purple-70`}
+                  className={`w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110 `}
                   aria-label={social.name}
                 >
                     <Image
@@ -75,14 +75,19 @@ const Footer = () => {
             
             {/* Email */}
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                
+              <div className="w-10 h-10  rounded-lg flex items-center justify-center">
+                <Image
+                  src="/mail.svg" // Adjust the path to your email icon
+                  alt="Email Icon"
+                  width={24}
+                  height={24}
+                />
               </div>
               <div>
-                <p className="text-sm text-gray-500 mb-1">Email</p>
+            
                 <a 
                   href={`mailto:${footerData.contact.email}`}
-                  className="text-gray-700 hover:text-purple-600 transition-colors duration-300"
+                  className="text-gray-700 hover:text-purple-50 transition-colors duration-300"
                 >
                   {footerData.contact.email}
                 </a>
@@ -91,14 +96,20 @@ const Footer = () => {
 
             {/* Phone */}
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10  rounded-lg flex items-center justify-center">
+                <Image
+                  src="/phone.svg" // Adjust the path to your phone icon
+                  alt="Phone Icon"
+                  width={24}
+                  height={24}
+                />
                 
               </div>
               <div>
-                <p className="text-sm text-gray-500 mb-1">Phone</p>
+                
                 <a 
                   href={`tel:${footerData.contact.phone}`}
-                  className="text-gray-700 hover:text-purple-600 transition-colors duration-300"
+                  className="text-gray-700 hover:text-purple-50 transition-colors duration-300"
                 >
                   {footerData.contact.phone}
                 </a>
@@ -107,12 +118,17 @@ const Footer = () => {
 
             {/* Location */}
             <div className="flex items-center justify-center md:justify-start gap-3">
-              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                
+              <div className="w-10 h-10  rounded-lg flex items-center justify-center">
+                <Image
+                  src="/location.svg" // Adjust the path to your location icon
+                  alt="Location Icon"
+                  width={24}
+                  height={24}
+                />  
               </div>
               <div>
-                <p className="text-sm text-gray-500 mb-1">Location</p>
-                <p className="text-gray-700">{footerData.contact.location}</p>
+               
+                <p className="text-grey-10">{footerData.contact.location}</p>
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 const footerData = {
   brand: {
-    name: "Jeffery Cannon",
+    name: "Cihad Karimli.",
     tagline: "Web Designer & Developer"
   },
   navigation: [
