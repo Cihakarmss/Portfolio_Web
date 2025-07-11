@@ -27,18 +27,16 @@ const CreativeSkills = () => {
                   <Image
                     src={skill.icon}
                     alt={skill.title}
-                    width={77}
-                    height={77}
-                    className="mb-4 group-hover:scale-110 transition-transform duration-300"
+                    width={54}
+                    height={54}
+                    className="mb-10 group-hover:scale-110 transition-transform duration-300"
                   />
                 )}
 
-                <div className="mb-6">
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300"></div>
-                </div>
+                
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-grey-10 mb-4 group-hover:text-purple-600 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-grey-10 mb-4 group-hover:text-purple-50 transition-colors duration-300">
                   {skill.title}
                 </h3>
 

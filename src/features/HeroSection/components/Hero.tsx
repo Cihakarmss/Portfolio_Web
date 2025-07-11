@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         
         {/* Left Section - Content */}
-        <div className="flex flex-col items-start justify-center space-y-6">
+        <div className="flex flex-col items-start justify-center space-y-6z">
           {/* Greeting */}
           <div className="bg-peach-96   text-lg text-gray-600 mb-4 flex items-center gap-2">
             {data.hero.greeting}
